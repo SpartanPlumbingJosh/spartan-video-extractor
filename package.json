@@ -1,0 +1,23 @@
+{
+  "name": "spartan-video-extractor",
+  "version": "1.0.0",
+  "description": "Extract frames from videos uploaded to Slack for Kate to analyze",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.17.0",
+    "@slack/web-api": "^6.11.0",
+    "axios": "^1.6.0",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.24",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.2"
+  }
+}
